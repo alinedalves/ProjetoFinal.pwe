@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #F5F5DC;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #A9A9A9;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s ease; 
+}
+
+
+a:hover {
+    background-color: #D2691E;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff6347;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+a:hover::after {
+    width: 100%; 
+}
+
+.hero {
+    background: url('../img/img-massa.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #D2691E;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #B04A28;
+}
+
+.receitas-populares {
+    padding: 40px 20px;
+    background-color: #F5F5DC;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.titulo-section {
+    width: 100%;
+    margin-bottom: 30px;
+    color: #B04A28;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card-receita {
+    flex: 1;
+    min-width: 300px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.imagem-receita-principal {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.conteudo-receita {
+    text-align: center;
+}
+
+.card-receita h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+details {
+    margin-top: 15px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #D2691E;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.historia-culinaria {
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 280px;
+    background-color: #F5F5DC;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.coluna h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.coluna p {
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.coluna a {
+    color: #D2691E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.coluna a:hover {
+    text-decoration: underline;
+}
+
+.destaque-alimentacao {
+    background: url('../img/img-saudavel.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.destaque-alimentacao img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.destaque-alimentacao h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+}
+
+.destaque-alimentacao p {
+    font-size: 1.25em;
+    margin: 20px auto 30px;
+    padding: 20px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+    max-width: 90%;
+}
+
+
+.receitas-saudaveis {
+    padding: 40px 20px;
+    background-color: #F5F5DC;
+}
+
+.receitas-saudaveis .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.receita-item {
+    flex: 1;
+    min-width: 280px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.receita-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.receita-item h2 {
+    color: #333333;
+    margin: 10px 0;
+}
+
+.receita-item p {
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.receita-item a {
+    color: #D2691E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.receita-item a:hover {
+    text-decoration: underline;
+}
+
+.beneficios-alimentacao {
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
+
+.beneficios-alimentacao .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.beneficio-item {
+    flex: 1;
+    min-width: 280px;
+    background-color: #F5F5DC;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.beneficio-item h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.beneficio-item p {
+    color: #666666;
+}
+.destaque-massas {
+    background: url('../img/img-macarrao.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.destaque-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.destaque-massas h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+}
+
+.destaque-massas p {
+    font-size: 1.25em;
+    margin: 20px auto 30px;
+    padding: 20px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.receitas-populares {
+    padding: 40px 20px;
+    background-color: #F5F5DC;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-content-dicas {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.dicas-tecnicas {
+    background: url('../img/img-habilidades.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content-dicas {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dicas-tecnicas h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 15px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+}
+
+.dicas-tecnicas p {
+    font-size: 1.2em;
+    margin: 20px auto 40px;
+    padding: 15px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.dicas-populares {
+    padding: 40px 20px;
+    background-color: #F5F5DC;
+}
+
+.dicas-populares .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 300px; 
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+    overflow: hidden;
+}
+
+.coluna h2 {
+    font-size: 1.75em; 
+    margin-top: 0;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.coluna p {
+    font-size: 1em; 
+    color: #666666;
+    margin-bottom: 20px; 
+}
+
+.coluna ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.sobre {
+    background: url('../img/img-sobre.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content-sobre {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content-sobre h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+}
+
+.hero-content-sobre p {
+    font-size: 1.25em;
+    margin: 20px auto 30px;
+    padding: 20px;
+    border: 3px solid #D2691E;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.sobre-conteudo {
+    padding: 40px 20px;
+    background-color: #F5F5DC;
+}
+
+.sobre-conteudo .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 280px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.coluna h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.coluna p {
+    font-size: 1em;
+    color: #666666;
+    line-height: 1.6;
+}
+
+
+
+footer {
+    background-color: #F5F5DC;
+    padding: 20px;
+    text-align: center;
+    color: #333333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #D2691E;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-content-sobre h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content-sobre p {
+        font-size: 1em;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
